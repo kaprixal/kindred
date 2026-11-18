@@ -1,0 +1,30 @@
+{
+  "name": "kindred",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Gifts that fit the person, not the holiday list.",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "probe": "node --env-file=.env.local scripts/probe-catalog.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5.9",
+    "vitest": "5.1.0"
+  }
+}
